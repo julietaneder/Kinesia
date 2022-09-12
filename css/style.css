@@ -238,8 +238,11 @@ table {
 .index {
   margin-top: 60px;
 }
+.index h2 {
+  font-size: 20px;
+}
 .index p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: lighter;
   color: #FFFFFF;
 }
@@ -326,7 +329,7 @@ table {
 }
 .index .profesionales .profesionalesContent .cardWrapper .card .cardContent .name {
   padding-top: 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bolder;
   color: #000000;
 }
@@ -338,7 +341,7 @@ table {
   align-items: center;
   padding-top: 10px;
   line-height: 20px;
-  font-size: 12px;
+  font-size: 14px;
   color: #000000;
 }
 
@@ -349,10 +352,11 @@ table {
     margin-top: 100px;
   }
   .index h2 {
+    font-size: 25px;
     margin-left: 60px;
   }
   .index p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: lighter;
     color: #FFFFFF;
   }
@@ -414,7 +418,7 @@ table {
   font-weight: normal;
 }
 .quienesSomos p {
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 10px;
 }
 .quienesSomos #slider {
@@ -534,6 +538,7 @@ table {
   .quienesSomos h2 {
     padding: 0px 60px;
     line-height: 25px;
+    font-size: 22px;
   }
   .quienesSomos p {
     padding: 10px 60px;
@@ -555,9 +560,13 @@ table {
   background-image: url("../../images/secretaria.png");
   background-size: cover;
 }
-.formulario .infoForm li {
+.formulario .infoForm li h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.formulario .infoForm li p {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 25px;
 }
 .formulario .datosForm {
   margin-right: 16px;
@@ -619,8 +628,11 @@ table {
   .formulario .infoForm li h2, .formulario .infoForm li p {
     margin: 5px 60px 5px 10px;
   }
+  .formulario .infoForm li h2 {
+    font-size: 25px;
+  }
   .formulario .infoForm li p {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 30px;
   }
   .formulario .datosForm {
@@ -643,10 +655,10 @@ table {
   background-color: #fffdfd;
 }
 .mainObrasSociales h2 {
-  font-size: 18px; /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
+  font-size: 20px; /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
 }
 .mainObrasSociales p {
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 10px;
   line-height: 20px;
 }
@@ -685,6 +697,9 @@ table {
 }
 .rehabilitacion h2 {
   font-size: 20px;
+}
+.rehabilitacion p {
+  font-size: 18px;
 }
 .rehabilitacion .cardsRehab {
   display: flex;
@@ -733,6 +748,9 @@ table {
   }
   .rehabilitacion h2 {
     font-size: 22px; /* Se que no es buena práctica, pero no se como hacer al haber hecho desktop first y no mobile */
+  }
+  .rehabilitacion p {
+    font-size: 20px;
   }
   .rehabilitacion .cardsRehab {
     display: flex;

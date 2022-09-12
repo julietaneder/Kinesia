@@ -4,10 +4,10 @@
   margin-top: 60px;
   background-color: map-get($colors-OS, bodyColor1);
   h2{
-    font-size: map-get($fontSize, lg); /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
+    font-size: map-get($fontSize, xl); /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
   }
   p{
-    font-size: map-get($fontSize, md);
+    font-size: map-get($fontSize, lg);
     padding-bottom: 10px;
     line-height: 20px;
   }

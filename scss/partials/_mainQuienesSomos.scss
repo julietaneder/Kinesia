@@ -10,7 +10,7 @@
     font-weight: normal;
   }
   p{
-    font-size: map-get($fontSize, xl);
+    font-size: map-get($fontSize, lg);
     padding-bottom: 10px;
   }
   #slider {
@@ -128,6 +128,7 @@
     h2{
       padding: 0px 60px;
       line-height: 25px;
+      font-size: map-get($fontSize, xxl);
     }
     p{
       padding: 10px 60px;

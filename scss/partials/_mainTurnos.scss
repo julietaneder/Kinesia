@@ -5,8 +5,14 @@
     background-size: cover;
     .infoForm{
         li{
-            font-size: map-get($fontSize, lg);
-            line-height: 20px;
+            h2{
+                font-size: map-get($fontSize, xl);
+                padding-bottom: 10px;
+            }
+            p{
+                font-size: map-get($fontSize, lg);
+                line-height: 25px;
+            }
         }
     }
     .datosForm{
@@ -75,8 +81,11 @@
                 h2, p{
                     margin: 5px 60px 5px 10px;
                 }
+                h2{
+                    font-size: map-get($fontSize, xxxl);
+                }
                 p{
-                    font-size: map-get($fontSize, xxl);
+                    font-size: map-get($fontSize, xl);
                     line-height: 30px;
                 }
             }

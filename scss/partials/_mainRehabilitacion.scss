@@ -6,6 +6,9 @@
     h2{
         font-size: map-get($fontSize, xl);
     }
+    p{
+        font-size: map-get($fontSize, lg);
+    }
     .cardsRehab{
         @include flex (row, center, center);
         .fisio, .cardio, .nutri, .osteopatia, .traumatologia, .columna{
@@ -48,6 +51,9 @@
         padding: 0px 60px;
         h2{
             font-size: map-get($fontSize, xxl); /* Se que no es buena práctica, pero no se como hacer al haber hecho desktop first y no mobile */
+        }
+        p {
+            font-size: map-get($fontSize, xl);
         }
         .cardsRehab{
             @include flex (row, space-between, center);

@@ -2,8 +2,11 @@
 
 .index{
   margin-top: 60px;
+  h2{
+    font-size: map-get($fontSize, xl);
+  }
   p{
-    font-size: map-get($fontSize, md);
+    font-size: map-get($fontSize, lg);
     font-weight: lighter;
     color: map-get($colors-index, neutralColor2);
   }
@@ -83,7 +86,7 @@
             height: 80px;
             .name{
               padding-top: 5px;
-              font-size: map-get($fontSize, sm);
+              font-size: map-get($fontSize, md);
               font-weight: bolder;
               color: map-get($colors-index, neutralColor1);
             }
@@ -91,7 +94,7 @@
               @include flex (column, space-between, center);
               padding-top: 10px;
               line-height: 20px;
-              font-size: map-get($fontSize, xs);
+              font-size: map-get($fontSize, sm);
               color: map-get($colors-index, neutralColor1);
             }
           }
@@ -110,10 +113,11 @@
   .index{
     margin-top: 100px;
     h2{
+      font-size: map-get($fontSize, xxxl);
       margin-left: 60px;
     }
     p{
-      font-size: map-get($fontSize, lg);
+      font-size: map-get($fontSize, xl);
       font-weight: lighter;
       color: map-get($colors-index, neutralColor2);
     }
