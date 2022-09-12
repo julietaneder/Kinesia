@@ -1,0 +1,839 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.index #plantillas, .index #estetica, .index #rehabilitacion {
+  line-height: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.index #plantillas p, .index #estetica p, .index #rehabilitacion p {
+  padding: 10px;
+}
+.index #plantillas h2, .index #estetica h2, .index #rehabilitacion h2 {
+  color: #FFFFFF;
+  font-weight: lighter;
+  padding: 10px;
+}
+.index #plantillas .inputIndex, .index #estetica .inputIndex, .index #rehabilitacion .inputIndex {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.index #plantillas, .index #estetica, .index #rehabilitacion {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  font-family: "Bitter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Inicio header mobile todas las páginas */
+.ulHeader {
+  background-color: #04A085;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  padding: 0px 16px;
+}
+.ulHeader p {
+  font-size: 10px;
+  color: #FFFFFF;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ulHeader li i {
+  color: #FFFFFF;
+  width: 14px;
+  height: 14px;
+}
+
+.siteNav {
+  background-color: #FFFFFF;
+  font-size: 18px;
+  font-style: normal;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+}
+.siteNav img {
+  width: 125px;
+  height: 44px;
+  margin-left: 16px;
+}
+
+.btnNav {
+  border: none;
+}
+
+/* Fin header mobile todas las páginas */
+/* Inicio header desktop todas las páginas*/
+@media screen and (min-width: 992px) {
+  .ulHeader {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .ulHeader p {
+    font-size: 16px;
+    margin: 10px;
+  }
+  .ulHeader li i {
+    width: 22px;
+    height: 22px;
+  }
+  .navList {
+    align-items: center;
+    margin-right: 60px;
+  }
+  .siteNav img {
+    padding-left: 60px;
+    width: 272px;
+    height: 101px;
+  }
+  .nav-link {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .turnos {
+    color: #FFFFFF;
+    background-color: #0468A0;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .turnos a {
+    color: #FFFFFF;
+  }
+  .obrasSociales {
+    color: #FFFFFF;
+    background-color: #21A4A4;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .obrasSociales a {
+    color: #FFFFFF;
+  }
+}
+/* Fin header desktop de todas las páginas*/
+/* Inicio footer mobile todas las páginas */
+.siteFooter {
+  background-color: #04A085;
+}
+.siteFooter img {
+  margin: 5px;
+  width: 25%;
+  border-bottom: solid 1px;
+}
+.siteFooter p {
+  color: #FFFFFF;
+  font-weight: lighter;
+  font-size: 10px;
+  padding-bottom: 2px;
+}
+.siteFooter i {
+  color: #FFFFFF;
+  padding: 4px;
+}
+
+.contacto a {
+  font-size: 12px;
+}
+
+.redes a {
+  font-size: 16px;
+}
+
+/* Fin footer mobile todas las páginas */
+/* Inicio footer desktop de todas las páginas */
+@media screen and (min-width: 992px) {
+  .contacto {
+    margin-left: 60px;
+  }
+  .contacto a {
+    font-size: 20px;
+  }
+  .siteFooter p {
+    font-size: 16px;
+  }
+  .redes p {
+    padding-top: 5px;
+  }
+  .redes a {
+    font-size: 25px;
+    margin: 20px;
+  }
+  .location i:hover, .redes i:hover {
+    color: #5e5e5e;
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
+  }
+}
+/* Fin footer desktop de todas las páginas*/
+/* Inicio de la página index mobile */
+.index {
+  margin-top: 60px;
+}
+.index p {
+  font-size: 16px;
+  font-weight: lighter;
+  color: #FFFFFF;
+}
+.index input {
+  background-color: #F6BB63;
+  border-color: #F6BB63;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 110px;
+  height: 33px;
+}
+.index #rehabilitacion {
+  background-color: #21A4A4;
+}
+.index #estetica {
+  background-color: #16C1B1;
+}
+.index #plantillas {
+  background-color: #0468A0;
+}
+.index #rehabilitacion img, .index #estetica img, .index #plantillas img {
+  width: 100%;
+  object-fit: cover;
+}
+.index .profesionales .profesionalesContent .cardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card {
+  width: 320px;
+  border-radius: 25px;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .imageContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  position: relative;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .imageContent .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(246, 187, 99, 0.5843137255);
+  border-radius: 25px 25px 0 25px;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .imageContent .overlay::before, .index .profesionales .profesionalesContent .cardWrapper .card .imageContent .overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(246, 187, 99, 0.5843137255);
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .imageContent .overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #FFFFFF;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .imageContent .cardImage {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  padding: 3px;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .imageContent .cardImage .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(246, 187, 99, 0.5843137255);
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .cardContent {
+  height: 80px;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .cardContent .name {
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #000000;
+}
+.index .profesionales .profesionalesContent .cardWrapper .card .cardContent .description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000000;
+}
+
+/* Fin de la página index mobile */
+/* Inicio de la página index desktop*/
+@media screen and (min-width: 992px) {
+  .index {
+    margin-top: 100px;
+  }
+  .index h2 {
+    margin-left: 60px;
+  }
+  .index p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #FFFFFF;
+  }
+  .index input {
+    border-radius: 6px;
+    font-size: 16px;
+    width: 160px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .index #rehabilitacion {
+    padding-bottom: 0px;
+    margin: 10px 60px;
+  }
+  .index #rehabilitacion img {
+    width: 50%;
+    object-fit: cover;
+  }
+  .index #estetica, .index #plantillas {
+    padding-bottom: 0px;
+    margin: 30px 60px;
+  }
+  .index #estetica img, .index #plantillas img {
+    width: 50%;
+    object-fit: cover;
+  }
+  .index .profesionales .profesionalesContent .cardWrapper .card .cardContent .name {
+    font-size: 18px;
+  }
+  .index .profesionales .profesionalesContent .cardWrapper .card .cardContent .description {
+    font-size: 16px;
+  }
+  .divIndex {
+    height: auto;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+  .divIndex p {
+    margin: auto 0px;
+    padding: 20px;
+  }
+  .divIndex h2 {
+    font-weight: lighter;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 20px;
+  }
+}
+/* Fin de la página index desktop*/
+/* Inicio de la página quiénes somos mobile */
+.quienesSomos {
+  margin-top: 60px;
+  background-color: #fffdfd;
+}
+.quienesSomos h2 {
+  padding-bottom: 10px;
+  line-height: 25px;
+  font-size: 20px; /* Se que no es buena práctica pero no se cómo hacer al haber hecho desktop first en vez de mobile */
+  font-weight: normal;
+}
+.quienesSomos p {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.quienesSomos #slider {
+  position: relative;
+  width: 50%;
+  height: 32vw;
+  margin: 15px auto 30px;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+.quienesSomos #slider input[type=radio] {
+  position: relative;
+  top: 60%;
+  left: 55%;
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+}
+.quienesSomos #slider input[type=radio]:nth-child(5) {
+  margin-right: 0px;
+}
+.quienesSomos #slider input[type=radio]:checked {
+  opacity: 1;
+}
+.quienesSomos #slider label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #FFFFFF;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 400ms ease;
+}
+.quienesSomos #slider label img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #FFFFFF;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: transform 400ms ease;
+}
+
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(20%, 0, -100px);
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(40%, 0, -250px);
+}
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-20%, 0, -100px);
+}
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-40%, 0, -250px);
+}
+
+/* Fin de la página quiénes somos mobile */
+/* Inicio de la página quiénes somos desktop */
+@media screen and (min-width: 992px) {
+  .quienesSomos {
+    margin-top: 100px;
+    background-color: #fffdfd;
+  }
+  .quienesSomos h2 {
+    padding: 0px 60px;
+    line-height: 25px;
+  }
+  .quienesSomos p {
+    padding: 10px 60px;
+    font-size: 20px;
+  }
+  .quienesSomos #slider {
+    margin-bottom: 80px;
+  }
+  .quienesSomos #slider input[type=radio] {
+    top: 108%;
+    left: 50%;
+    width: 18px;
+    height: 18px;
+  }
+}
+/* Fin de la página quiénes somos desktop */
+.formulario {
+  margin-top: 60px;
+  background-image: url("../../images/secretaria.png");
+  background-size: cover;
+}
+.formulario .infoForm li {
+  font-size: 18px;
+  line-height: 20px;
+}
+.formulario .datosForm {
+  margin-right: 16px;
+}
+.formulario .datosForm .servicioForm ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulario .datosForm .servicioForm ul li input {
+  background-color: #E7EDF0;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-color: #F5F5F5;
+  color: #000000;
+  height: 100%;
+  margin: 5px 5px 5px 0px;
+}
+.formulario .datosForm .servicioForm ul li input:focus {
+  color: #FFFFFF;
+  background-color: #04A085;
+}
+.formulario .datosForm input[type=submit] {
+  font-size: 14px;
+  border-radius: 4px;
+  border-color: #0468A0;
+  width: 140px;
+  height: 36px;
+  background-color: #0468A0;
+  color: #F5F5F5;
+}
+.formulario .datosForm input[type=reset] {
+  font-size: 14px;
+  border-radius: 4px;
+  border-color: #6D8C9D;
+  width: 140px;
+  height: 36px;
+  background-color: #F8F5FF;
+  color: #0468A0;
+}
+.formulario .datosForm select, .formulario .datosForm input[type=datetime-local], .formulario .datosForm input[type=text], .formulario .datosForm input[type=number] {
+  background-color: #E7EDF0;
+  border-color: #E7EDF0;
+  color: #797979;
+}
+
+@media screen and (min-width: 992px) {
+  .formulario {
+    margin-top: 100px;
+    background-image: none;
+    background-color: #F5F5F5;
+  }
+  .formulario .infoForm {
+    background-image: url("../../images/secretaria.png");
+    margin: 0px;
+  }
+  .formulario .infoForm li h2, .formulario .infoForm li p {
+    margin: 5px 60px 5px 10px;
+  }
+  .formulario .infoForm li p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .formulario .datosForm {
+    color: #0468A0;
+  }
+  .formulario .datosForm input, .formulario .datosForm select, .formulario .datosForm input[type=datetime-local], .formulario .datosForm input[type=text], .formulario .datosForm input[type=number] {
+    border-color: #0468A0;
+  }
+  .formulario .datosForm .servicioForm ul li input {
+    border-radius: 10px;
+    border-color: #F5F5F5;
+    color: #000000;
+    height: 100%;
+    margin: 5px;
+  }
+}
+/* Inicio de la página obras sociales mobile */
+.mainObrasSociales {
+  margin-top: 60px;
+  background-color: #fffdfd;
+}
+.mainObrasSociales h2 {
+  font-size: 18px; /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
+}
+.mainObrasSociales p {
+  font-size: 16px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+.mainObrasSociales .logosObrasSociales img {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* Fin de la página obras sociales mobile */
+/* Inicio de la página obras sociales desktop */
+@media screen and (min-width: 992px) {
+  .mainObrasSociales {
+    margin-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .mainObrasSociales h2 {
+    font-size: 22px; /* Se que no es buenapráctica, pero no se como hacer al haberhecho desktop first y no mobile */
+    margin-left: 0px;
+  }
+  .mainObrasSociales p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .mainObrasSociales .logosObrasSociales img:hover {
+    transform: translateY(-3%);
+  }
+}
+/* Fin de la página obras sociales desktop */
+/* Inicio de la página rehabilitación mobile */
+.rehabilitacion {
+  margin-top: 60px;
+  background-color: #fffdfd;
+}
+.rehabilitacion h2 {
+  font-size: 20px;
+}
+.rehabilitacion .cardsRehab {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.rehabilitacion .cardsRehab .fisio, .rehabilitacion .cardsRehab .cardio, .rehabilitacion .cardsRehab .nutri, .rehabilitacion .cardsRehab .osteopatia, .rehabilitacion .cardsRehab .traumatologia, .rehabilitacion .cardsRehab .columna {
+  position: relative;
+  margin: 5px;
+  color: #FFFFFF;
+}
+.rehabilitacion .cardsRehab .fisio img, .rehabilitacion .cardsRehab .cardio img, .rehabilitacion .cardsRehab .nutri img, .rehabilitacion .cardsRehab .osteopatia img, .rehabilitacion .cardsRehab .traumatologia img, .rehabilitacion .cardsRehab .columna img {
+  max-width: 100%;
+}
+.rehabilitacion .cardsRehab .fisio figcaption, .rehabilitacion .cardsRehab .cardio figcaption, .rehabilitacion .cardsRehab .nutri figcaption, .rehabilitacion .cardsRehab .osteopatia figcaption, .rehabilitacion .cardsRehab .traumatologia figcaption, .rehabilitacion .cardsRehab .columna figcaption {
+  background-color: #0468A0;
+  top: -1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rehabilitacion .cardsRehab .fisio figcaption h4, .rehabilitacion .cardsRehab .cardio figcaption h4, .rehabilitacion .cardsRehab .nutri figcaption h4, .rehabilitacion .cardsRehab .osteopatia figcaption h4, .rehabilitacion .cardsRehab .traumatologia figcaption h4, .rehabilitacion .cardsRehab .columna figcaption h4 {
+  font-size: 16px;
+}
+.rehabilitacion .cardsRehab .fisio figcaption h6, .rehabilitacion .cardsRehab .cardio figcaption h6, .rehabilitacion .cardsRehab .nutri figcaption h6, .rehabilitacion .cardsRehab .osteopatia figcaption h6, .rehabilitacion .cardsRehab .traumatologia figcaption h6, .rehabilitacion .cardsRehab .columna figcaption h6 {
+  font-weight: lighter;
+  font-size: 16px;
+  padding: 3px 10px;
+  background-color: #16C1B1;
+}
+
+/* Fin de la página rehabilitación mobile */
+/* Inicio de la página rehabilitación física desktop */
+@media screen and (min-width: 992px) {
+  .rehabilitacion {
+    margin-top: 100px;
+    padding: 0px 60px;
+  }
+  .rehabilitacion h2 {
+    font-size: 22px; /* Se que no es buena práctica, pero no se como hacer al haber hecho desktop first y no mobile */
+  }
+  .rehabilitacion .cardsRehab {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .rehabilitacion .cardsRehab .fisio, .rehabilitacion .cardsRehab .cardio, .rehabilitacion .cardsRehab .nutri, .rehabilitacion .cardsRehab .osteopatia, .rehabilitacion .cardsRehab .traumatologia, .rehabilitacion .cardsRehab .columna {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #FFFFFF;
+  }
+  .rehabilitacion .cardsRehab .fisio *, .rehabilitacion .cardsRehab .cardio *, .rehabilitacion .cardsRehab .nutri *, .rehabilitacion .cardsRehab .osteopatia *, .rehabilitacion .cardsRehab .traumatologia *, .rehabilitacion .cardsRehab .columna * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
+  .rehabilitacion .cardsRehab .fisio::before, .rehabilitacion .cardsRehab .cardio::before, .rehabilitacion .cardsRehab .nutri::before, .rehabilitacion .cardsRehab .osteopatia::before, .rehabilitacion .cardsRehab .traumatologia::before, .rehabilitacion .cardsRehab .columna::before {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    top: 100%;
+    content: "";
+    background-color: rgba(51, 51, 51, 0.81);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+  .rehabilitacion .cardsRehab .fisio img, .rehabilitacion .cardsRehab .cardio img, .rehabilitacion .cardsRehab .nutri img, .rehabilitacion .cardsRehab .osteopatia img, .rehabilitacion .cardsRehab .traumatologia img, .rehabilitacion .cardsRehab .columna img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+  }
+  .rehabilitacion .cardsRehab .fisio figcaption, .rehabilitacion .cardsRehab .cardio figcaption, .rehabilitacion .cardsRehab .nutri figcaption, .rehabilitacion .cardsRehab .osteopatia figcaption, .rehabilitacion .cardsRehab .traumatologia figcaption, .rehabilitacion .cardsRehab .columna figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+  .rehabilitacion .cardsRehab .fisio h4, .rehabilitacion .cardsRehab .fisio h6, .rehabilitacion .cardsRehab .cardio h4, .rehabilitacion .cardsRehab .cardio h6, .rehabilitacion .cardsRehab .nutri h4, .rehabilitacion .cardsRehab .nutri h6, .rehabilitacion .cardsRehab .osteopatia h4, .rehabilitacion .cardsRehab .osteopatia h6, .rehabilitacion .cardsRehab .traumatologia h4, .rehabilitacion .cardsRehab .traumatologia h6, .rehabilitacion .cardsRehab .columna h4, .rehabilitacion .cardsRehab .columna h6 {
+    margin: 0;
+    opacity: 0;
+    letter-spacing: 1px;
+  }
+  .rehabilitacion .cardsRehab .fisio h4, .rehabilitacion .cardsRehab .cardio h4, .rehabilitacion .cardsRehab .nutri h4, .rehabilitacion .cardsRehab .osteopatia h4, .rehabilitacion .cardsRehab .traumatologia h4, .rehabilitacion .cardsRehab .columna h4 {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    font-weight: 400;
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    margin-bottom: 5px;
+  }
+  .rehabilitacion .cardsRehab .fisio h6, .rehabilitacion .cardsRehab .cardio h6, .rehabilitacion .cardsRehab .nutri h6, .rehabilitacion .cardsRehab .osteopatia h6, .rehabilitacion .cardsRehab .traumatologia h6, .rehabilitacion .cardsRehab .columna h6 {
+    background-color: #16C1B1;
+    padding: 3px 10px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .rehabilitacion .cardsRehab .fisio a, .rehabilitacion .cardsRehab .cardio a, .rehabilitacion .cardsRehab .nutri a, .rehabilitacion .cardsRehab .osteopatia a, .rehabilitacion .cardsRehab .traumatologia a, .rehabilitacion .cardsRehab .columna a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .rehabilitacion .cardsRehab .fisio:hover:before, .rehabilitacion .cardsRehab .fisio .hover:before, .rehabilitacion .cardsRehab .cardio:hover:before, .rehabilitacion .cardsRehab .cardio .hover:before, .rehabilitacion .cardsRehab .nutri:hover:before, .rehabilitacion .cardsRehab .nutri .hover:before, .rehabilitacion .cardsRehab .osteopatia:hover:before, .rehabilitacion .cardsRehab .osteopatia .hover:before, .rehabilitacion .cardsRehab .traumatologia:hover:before, .rehabilitacion .cardsRehab .traumatologia .hover:before, .rehabilitacion .cardsRehab .columna:hover:before, .rehabilitacion .cardsRehab .columna .hover:before {
+    top: 10px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+  .rehabilitacion .cardsRehab .fisio:hover h4, .rehabilitacion .cardsRehab .fisio .hover h4, .rehabilitacion .cardsRehab .fisio:hover h6, .rehabilitacion .cardsRehab .fisio .hover h6, .rehabilitacion .cardsRehab .cardio:hover h4, .rehabilitacion .cardsRehab .cardio .hover h4, .rehabilitacion .cardsRehab .cardio:hover h6, .rehabilitacion .cardsRehab .cardio .hover h6, .rehabilitacion .cardsRehab .nutri:hover h4, .rehabilitacion .cardsRehab .nutri .hover h4, .rehabilitacion .cardsRehab .nutri:hover h6, .rehabilitacion .cardsRehab .nutri .hover h6, .rehabilitacion .cardsRehab .osteopatia:hover h4, .rehabilitacion .cardsRehab .osteopatia .hover h4, .rehabilitacion .cardsRehab .osteopatia:hover h6, .rehabilitacion .cardsRehab .osteopatia .hover h6, .rehabilitacion .cardsRehab .traumatologia:hover h4, .rehabilitacion .cardsRehab .traumatologia .hover h4, .rehabilitacion .cardsRehab .traumatologia:hover h6, .rehabilitacion .cardsRehab .traumatologia .hover h6, .rehabilitacion .cardsRehab .columna:hover h4, .rehabilitacion .cardsRehab .columna .hover h4, .rehabilitacion .cardsRehab .columna:hover h6, .rehabilitacion .cardsRehab .columna .hover h6 {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .rehabilitacion .cardsRehab .fisio:hover h4, .rehabilitacion .cardsRehab .fisio .hover h4, .rehabilitacion .cardsRehab .cardio:hover h4, .rehabilitacion .cardsRehab .cardio .hover h4, .rehabilitacion .cardsRehab .nutri:hover h4, .rehabilitacion .cardsRehab .nutri .hover h4, .rehabilitacion .cardsRehab .osteopatia:hover h4, .rehabilitacion .cardsRehab .osteopatia .hover h4, .rehabilitacion .cardsRehab .traumatologia:hover h4, .rehabilitacion .cardsRehab .traumatologia .hover h4, .rehabilitacion .cardsRehab .columna:hover h4, .rehabilitacion .cardsRehab .columna .hover h4 {
+    font-size: 20px;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .rehabilitacion .cardsRehab .fisio:hover h6, .rehabilitacion .cardsRehab .fisio .hover h6, .rehabilitacion .cardsRehab .cardio:hover h6, .rehabilitacion .cardsRehab .cardio .hover h6, .rehabilitacion .cardsRehab .nutri:hover h6, .rehabilitacion .cardsRehab .nutri .hover h6, .rehabilitacion .cardsRehab .osteopatia:hover h6, .rehabilitacion .cardsRehab .osteopatia .hover h6, .rehabilitacion .cardsRehab .traumatologia:hover h6, .rehabilitacion .cardsRehab .traumatologia .hover h6, .rehabilitacion .cardsRehab .columna:hover h6, .rehabilitacion .cardsRehab .columna .hover h6 {
+    font-size: 18px;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+}/*# sourceMappingURL=style.css.map */

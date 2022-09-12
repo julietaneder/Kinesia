@@ -1,0 +1,79 @@
+// COLORES
+
+$colors-header: (
+    primaryColor: #04A085,
+    secondaryColor: #21A4A4,
+    terciaryColor: #0468A0,
+    neutralColor1: #000000,
+    neutralColor2: #FFFFFF,
+);
+
+$colors-footer: (
+    primaryColor: #04A085,
+    neutralColor2: #FFFFFF,
+    hoverFooter: #5e5e5e
+);
+
+$colors-index: (
+    primaryColorVariant: #16C1B1,
+    secondaryColor: #21A4A4,
+    terciaryColor: #0468A0,
+    accentColor: #F6BB63,
+    accentColorVariant: #F6BB6395,
+    neutralColor1: #000000,
+    neutralColor2: #FFFFFF,
+    bodyColor1: #fffdfd,
+);
+
+$colors-OS: (
+    bodyColor1: #fffdfd,
+);
+
+$colors-QS: (
+    bodyColor1: #fffdfd,
+    neutralColor2: #FFFFFF,
+);
+
+$colors-rehabilitacion: (
+    neutralColor2: #FFFFFF,
+    bodyColor1: #fffdfd,
+    primaryColorVariant: #16C1B1,
+    terciaryColor: #0468A0,
+);
+
+$colors-turnos: (
+    bodyColor2: #F8F5FF,
+    primaryColor: #04A085,
+    terciaryColor: #0468A0,
+    neutralColor1: #000000,
+    neutralColor1Variant1: #797979,
+    neutralColor2: #FFFFFF,
+    neutralColor2Variant1: #F5F5F5,
+    neutralColor2Variant2: #E7EDF0,
+    resetColor: #6D8C9D,
+);
+
+// TAMAÑO DE FUENTE
+
+$fontSize: (
+    xxs: 10px,
+    xs: 12px,
+    sm: 14px,
+    md: 16px,
+    lg: 18px,
+    xl: 20px,
+    xxl: 22px,
+    xxxl: 25px,
+);
+
+// BORDES
+
+$borders: (
+    bottomSolid: solid 1px,
+    radiusInput: 2px,
+    radiusXS: 3px,
+    radiusSmall: 4px,
+    radiusMedium: 6px,
+    radiusLarge: 8px,
+    radiusXL: 10px,
+);

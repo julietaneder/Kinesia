@@ -1,0 +1,149 @@
+/* Inicio de la página rehabilitación mobile */
+
+.rehabilitacion{
+    margin-top: 60px;
+    background-color: map-get($colors-rehabilitacion, bodyColor1);
+    h2{
+        font-size: map-get($fontSize, xl);
+    }
+    .cardsRehab{
+        @include flex (row, center, center);
+        .fisio, .cardio, .nutri, .osteopatia, .traumatologia, .columna{
+            position: relative;
+            margin: 5px;
+            color: map-get($colors-rehabilitacion, neutralColor2);
+            img{
+                max-width: 100%;
+            }
+            figcaption{
+                background-color: map-get($colors-rehabilitacion, terciaryColor);
+                top: -1;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                @include flex (column, center, center);
+                h4{
+                    font-size: map-get($fontSize, md);
+                }
+                h6{
+                    font-weight: lighter;
+                    font-size: map-get($fontSize, md);
+                    padding: 3px 10px;
+                    background-color: map-get($colors-rehabilitacion, primaryColorVariant);
+                }
+            }
+        }
+    }
+}
+  
+/* Fin de la página rehabilitación mobile */
+
+/* Inicio de la página rehabilitación física desktop */
+
+@media screen and (min-width: 992px){
+
+    .rehabilitacion{
+        margin-top: 100px;
+        padding: 0px 60px;
+        h2{
+            font-size: map-get($fontSize, xxl); /* Se que no es buena práctica, pero no se como hacer al haber hecho desktop first y no mobile */
+        }
+        .cardsRehab{
+            @include flex (row, space-between, center);
+            margin-top: 20px;
+            .fisio, .cardio, .nutri, .osteopatia, .traumatologia, .columna{
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                color: map-get($colors-rehabilitacion, neutralColor2);
+                *{
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    -webkit-transition: all 0.25s ease;
+                    transition: all 0.25s ease;
+                }
+                &::before{
+                    position: absolute;
+                    top: 10px;
+                    bottom: 10px;
+                    left: 10px;
+                    right: 10px;
+                    top: 100%;
+                    content: '';
+                    background-color: rgba(51, 51, 51, 0.81);
+                    -webkit-transition: all 0.25s ease;
+                    transition: all 0.25s ease;
+                    -webkit-transition-delay: 0.25s;
+                    transition-delay: 0.25s;
+                }
+                img{
+                    vertical-align: top;
+                    max-width: 100%;
+                    backface-visibility: hidden;
+                }
+                figcaption{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    @include flex (column, center, center);
+                    background-color: transparent;
+                }
+                h4, h6{
+                    margin: 0;
+                    opacity: 0;
+                    letter-spacing: 1px;
+                }
+                h4{
+                    -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%);
+                    font-weight: 400;
+                    -webkit-transition-delay: 0.05s;
+                    transition-delay: 0.05s;
+                    margin-bottom: 5px;
+                }
+                h6{
+                    background-color: map-get($colors-rehabilitacion, primaryColorVariant);
+                    padding: 3px 10px;
+                    -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%);
+                    -webkit-transition-delay: 0s;
+                    transition-delay: 0s;
+                }
+                a{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                }
+                &:hover:before, .hover:before{
+                    top: 10px;
+                    -webkit-transition-delay: 0s;
+                    transition-delay: 0s;
+                }
+                &:hover h4, .hover h4, &:hover h6, .hover h6{
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                &:hover h4, .hover h4{
+                    font-size: map-get($fontSize, xl);
+                    -webkit-transition-delay: 0.3s;
+                    transition-delay: 0.3s;
+                }
+                &:hover h6, .hover h6{
+                    font-size: map-get($fontSize, lg);
+                    -webkit-transition-delay: 0.2s;
+                    transition-delay: 0.2s;
+                }
+            }
+        }
+    }    
+}   
+
+// Fin de la página rehabilitación física desktop

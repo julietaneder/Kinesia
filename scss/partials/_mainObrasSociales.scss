@@ -1,0 +1,52 @@
+/* Inicio de la página obras sociales mobile */
+
+.mainObrasSociales{
+  margin-top: 60px;
+  background-color: map-get($colors-OS, bodyColor1);
+  h2{
+    font-size: map-get($fontSize, lg); /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
+  }
+  p{
+    font-size: map-get($fontSize, md);
+    padding-bottom: 10px;
+    line-height: 20px;
+  }
+  .logosObrasSociales{
+    img{
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      border-radius: map-get($borders, radiusLarge);
+    }
+  }
+}
+
+/* Fin de la página obras sociales mobile */
+
+/* Inicio de la página obras sociales desktop */
+
+@media screen and (min-width: 992px){
+
+  .mainObrasSociales{
+    margin-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    h2{
+      font-size: map-get($fontSize, xxl); /* Se que no es buenapráctica, pero no se como hacer al haberhecho desktop first y no mobile */
+      margin-left: 0px;
+    }
+    p{
+      font-size: map-get($fontSize, xl);
+      line-height: 30px;
+    }
+    .logosObrasSociales{
+      img{
+          &:hover{
+              transform: translateY(-3%);
+          }
+      }
+    }
+  }
+}
+
+/* Fin de la página obras sociales desktop */  

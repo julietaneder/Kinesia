@@ -1,0 +1,99 @@
+/* Inicio header mobile todas las páginas */
+
+.ulHeader{
+  background-color: map-get($colors-header, primaryColor);
+  @include flex (row, right, center);
+  padding: 0px 16px;
+  p{
+    font-size: map-get($fontSize, xxs);
+    color: map-get($colors-header, neutralColor2);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  li{
+    i{
+      color: map-get($colors-header, neutralColor2);
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+  
+.siteNav{
+    background-color: map-get($colors-header, neutralColor2);
+    font-size: map-get($fontSize, lg);
+    font-style:normal;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+    img{
+        width: 125px;
+        height: 44px;
+        margin-left: 16px;
+    }
+}
+  
+.btnNav{
+    border: none;
+}
+
+/* Fin header mobile todas las páginas */
+
+/* Inicio header desktop todas las páginas*/
+
+@media screen and (min-width: 992px){
+  
+  .ulHeader{
+    @include flex (row, left, center);
+    padding-left: 30px;
+    p{
+      font-size: map-get($fontSize, md);
+      margin: 10px;
+    }
+    li{
+      i{
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  
+  .navList{
+    align-items: center;
+    margin-right: 60px;
+  }
+
+  .siteNav{
+    img{
+      padding-left: 60px;
+      width: 272px;
+      height: 101px;
+    }  
+  }
+
+  .nav-link{
+    color: map-get($colors-header, neutralColor1);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .turnos{
+    color: map-get($colors-header, neutralColor2);
+    background-color: map-get($colors-header, terciaryColor);
+    height: 40px;
+    @include flex (row, center, center);
+    a{
+      color: map-get($colors-header, neutralColor2);
+    }
+  }
+  
+  .obrasSociales{
+    color: map-get($colors-header, neutralColor2);
+    background-color: map-get($colors-header, secondaryColor);
+    height: 40px;
+    @include flex (row, center, center);
+    a{
+      color: map-get($colors-header, neutralColor2);
+    }
+  }
+}
+  
+/* Fin header desktop de todas las páginas*/

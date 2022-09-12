@@ -1,0 +1,178 @@
+/* Inicio de la página index mobile */
+
+.index{
+  margin-top: 60px;
+  p{
+    font-size: map-get($fontSize, md);
+    font-weight: lighter;
+    color: map-get($colors-index, neutralColor2);
+  }
+  input{
+    background-color: map-get($colors-index, accentColor);
+    border-color: map-get($colors-index, accentColor);
+    border-radius: map-get($borders, radiusSmall);
+    font-size: map-get($fontSize, sm);
+    width: 110px;
+    height: 33px;
+  } 
+  #rehabilitacion{
+    @include card-servicio (map-get($colors-index, secondaryColor))
+  }
+  #estetica{
+    @include card-servicio (map-get($colors-index, primaryColorVariant));
+  }
+  #plantillas{
+    @include card-servicio (map-get($colors-index, terciaryColor));
+  }
+  #rehabilitacion, #estetica, #plantillas{
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .profesionales{
+    .profesionalesContent{
+      .cardWrapper{
+        @include flex (row, center, center);
+        .card{
+          width: 320px;
+          border-radius: 25px;
+          .imageContent{
+            @include flex (column, center, center);
+            padding: 10px 14px;
+            position: relative;
+            .overlay{
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              width: 100%;
+              background-color: map-get($colors-index, accentColorVariant);
+              border-radius: 25px 25px 0 25px;
+              &::before, &::after{
+                content: "";
+                position: absolute;
+                right: 0;
+                bottom: -40px;
+                height: 40px;
+                width: 40px;
+                background-color: map-get($colors-index, accentColorVariant);
+              }
+              &::after{
+                border-radius: 0 25px 0 0;
+                background-color: map-get($colors-index, neutralColor2);
+              }
+            }
+            .cardImage{
+              position: relative;
+              height: 150px;
+              width: 150px;
+              border-radius: 50%;
+              background-color: map-get($colors-index, neutralColor2);
+              padding: 3px;
+              .card-img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid map-get($colors-index, accentColorVariant);
+              }
+            }
+          }
+          .cardContent{
+            height: 80px;
+            .name{
+              padding-top: 5px;
+              font-size: map-get($fontSize, sm);
+              font-weight: bolder;
+              color: map-get($colors-index, neutralColor1);
+            }
+            .description{
+              @include flex (column, space-between, center);
+              padding-top: 10px;
+              line-height: 20px;
+              font-size: map-get($fontSize, xs);
+              color: map-get($colors-index, neutralColor1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Fin de la página index mobile */
+
+/* Inicio de la página index desktop*/
+
+@media screen and (min-width: 992px){
+    
+  .index{
+    margin-top: 100px;
+    h2{
+      margin-left: 60px;
+    }
+    p{
+      font-size: map-get($fontSize, lg);
+      font-weight: lighter;
+      color: map-get($colors-index, neutralColor2);
+    }
+    input{
+      border-radius: map-get($borders, radiusMedium);
+      font-size: map-get($fontSize, md);
+      width: 160px;
+      height: 48px;
+      cursor: pointer;
+    }
+    #rehabilitacion{
+      padding-bottom: 0px;
+      margin: 10px 60px;
+      img{
+        width: 50%;
+        object-fit: cover;
+      };
+    }
+    #estetica, #plantillas{
+      padding-bottom: 0px;
+      margin:30px 60px;
+      img{
+        width: 50%;
+        object-fit: cover;
+      };
+    }
+    .profesionales{
+      .profesionalesContent{
+        .cardWrapper{
+          .card{
+            .cardContent{
+              .name{
+                font-size: map-get($fontSize, lg);
+              }
+              .description{
+                font-size: map-get($fontSize, md);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .divIndex{
+    height: auto;
+    line-height: 30px;
+    padding: 0 10px;
+    p{
+      margin: auto 0px;
+      padding: 20px;
+    }
+    h2{
+      font-weight: lighter;
+      color: map-get($colors-index, neutralColor2);
+      margin: 0px;
+      padding: 20px;
+    }
+  }
+}   
+
+     
+/* Fin de la página index desktop*/

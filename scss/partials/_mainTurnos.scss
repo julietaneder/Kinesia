@@ -1,0 +1,107 @@
+// Inicio de la página turnos mobile
+.formulario{
+    margin-top: 60px;
+    background-image: url('../../images/secretaria.png');
+    background-size: cover;
+    .infoForm{
+        li{
+            font-size: map-get($fontSize, lg);
+            line-height: 20px;
+        }
+    }
+    .datosForm{
+        margin-right: 16px;
+        .servicioForm{
+            ul{
+                @include flex (row, space-between, center);
+                li{
+                    input{
+                        background-color: map-get($colors-turnos, neutralColor2Variant2);
+                        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+                        border-radius: map-get($borders, radiusXL);
+                        border-color: map-get($colors-turnos, neutralColor2Variant1) ;
+                        color: map-get($colors-turnos, neutralColor1);
+                        height: 100%;
+                        margin: 5px 5px 5px 0px;
+                        &:focus{
+                            color: map-get($colors-turnos, neutralColor2);
+                            background-color: map-get($colors-turnos, primaryColor);
+                        }
+                    }
+                }  
+            }
+        }
+        input[type=submit]{
+            font-size: map-get($fontSize, sm);
+            border-radius: map-get($borders, radiusSmall);
+            border-color: map-get($colors-turnos, terciaryColor);
+            width: 140px;
+            height: 36px;
+            background-color: map-get($colors-turnos, terciaryColor);
+            color: map-get($colors-turnos, neutralColor2Variant1);
+        }
+        input[type=reset]{
+            font-size: map-get($fontSize, sm);
+            border-radius: map-get($borders, radiusSmall);
+            border-color: map-get($colors-turnos, resetColor);
+            width: 140px;
+            height: 36px;
+            background-color: map-get($colors-turnos, bodyColor2);
+            color: map-get($colors-turnos, terciaryColor);
+        }
+        select, input[type=datetime-local], input[type=text], input[type=number]{
+            background-color: map-get($colors-turnos, neutralColor2Variant2);
+            border-radius: map-get($borders, radiusSInput);
+            border-color: map-get($colors-turnos, neutralColor2Variant2);
+            color: map-get($colors-turnos, neutralColor1Variant1);
+        }
+    }
+  }
+    
+// Fin de la página turnos mobile
+
+// Inicio de la página turnos desktop
+
+@media screen and (min-width: 992px){
+
+    .formulario{
+        margin-top: 100px;
+        background-image: none;
+        background-color: map-get($colors-turnos, neutralColor2Variant1);
+        .infoForm{
+            background-image: url('../../images/secretaria.png');
+            margin: 0px;
+            li{
+                h2, p{
+                    margin: 5px 60px 5px 10px;
+                }
+                p{
+                    font-size: map-get($fontSize, xxl);
+                    line-height: 30px;
+                }
+            }
+        }
+        .datosForm{
+            color: map-get($colors-turnos, terciaryColor);
+            input, select, input[type=datetime-local], input[type=text], input[type=number]{
+                border-color: map-get($colors-turnos, terciaryColor);
+            }
+            .servicioForm{
+                ul{
+                    li{
+                        input{
+                            border-radius: map-get($borders, radiusXL);
+                            border-color: map-get($colors-turnos, neutralColor2Variant1);
+                            color: map-get($colors-turnos, neutralColor1);
+                            height: 100%;
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Fin de la página turnos desktop
+  
