@@ -1,17 +1,23 @@
 // Inicio de la página turnos mobile
+
 .formulario{
+    min-height: 90vh;
     margin-top: 60px;
     background-image: url('../../images/secretaria.png');
-    background-size: cover;
+    background-size: cover;    
     .infoForm{
         li{
             h2{
                 font-size: map-get($fontSize, xl);
-                padding-bottom: 10px;
+                color: map-get($colors-turnos, neutralColor1);
+                padding-top: 20px;
+                padding-bottom: 20px;
             }
             p{
                 font-size: map-get($fontSize, lg);
+                color: map-get($colors-turnos, neutralColor1);
                 line-height: 25px;
+                padding-bottom: 30px;
             }
         }
     }
@@ -45,6 +51,7 @@
             height: 36px;
             background-color: map-get($colors-turnos, terciaryColor);
             color: map-get($colors-turnos, neutralColor2Variant1);
+            margin: 20px 0;
         }
         input[type=reset]{
             font-size: map-get($fontSize, sm);
@@ -54,12 +61,14 @@
             height: 36px;
             background-color: map-get($colors-turnos, bodyColor2);
             color: map-get($colors-turnos, terciaryColor);
+            margin: 20px 0;
         }
         select, input[type=datetime-local], input[type=text], input[type=number]{
             background-color: map-get($colors-turnos, neutralColor2Variant2);
             border-radius: map-get($borders, radiusSInput);
             border-color: map-get($colors-turnos, neutralColor2Variant2);
             color: map-get($colors-turnos, neutralColor1Variant1);
+            margin: 20px 0;
         }
     }
   }
@@ -91,6 +100,7 @@
             }
         }
         .datosForm{
+            margin-top: 20px;
             color: map-get($colors-turnos, terciaryColor);
             input, select, input[type=datetime-local], input[type=text], input[type=number]{
                 border-color: map-get($colors-turnos, terciaryColor);

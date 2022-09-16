@@ -199,35 +199,32 @@ table {
   color: #FFFFFF;
   padding: 4px;
 }
-
-.contacto a {
+.siteFooter .contacto a {
   font-size: 12px;
 }
-
-.redes a {
+.siteFooter .redes a {
   font-size: 16px;
 }
 
 /* Fin footer mobile todas las páginas */
 /* Inicio footer desktop de todas las páginas */
 @media screen and (min-width: 992px) {
-  .contacto {
-    margin-left: 60px;
-  }
-  .contacto a {
-    font-size: 20px;
-  }
   .siteFooter p {
     font-size: 16px;
   }
-  .redes p {
+  .siteFooter .contacto {
+    margin-left: 60px;
+  }
+  .siteFooter .contacto a {
+    font-size: 20px;
+  }
+  .siteFooter .redes p {
     padding-top: 5px;
   }
-  .redes a {
+  .siteFooter .redes a {
     font-size: 25px;
-    margin: 20px;
   }
-  .location i:hover, .redes i:hover {
+  .siteFooter .location i:hover, .siteFooter .redes i:hover {
     color: #5e5e5e;
     transform: scale(1.3);
     transition: ease-in-out 0.2s;
@@ -277,6 +274,7 @@ table {
 .index .profesionales .profesionalesContent .cardWrapper .card {
   width: 320px;
   border-radius: 25px;
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
 }
 .index .profesionales .profesionalesContent .cardWrapper .card .imageContent {
   display: flex;
@@ -556,17 +554,22 @@ table {
 }
 /* Fin de la página quiénes somos desktop */
 .formulario {
+  min-height: 90vh;
   margin-top: 60px;
   background-image: url("../../images/secretaria.png");
   background-size: cover;
 }
 .formulario .infoForm li h2 {
   font-size: 20px;
-  padding-bottom: 10px;
+  color: #000000;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .formulario .infoForm li p {
   font-size: 18px;
+  color: #000000;
   line-height: 25px;
+  padding-bottom: 30px;
 }
 .formulario .datosForm {
   margin-right: 16px;
@@ -599,6 +602,7 @@ table {
   height: 36px;
   background-color: #0468A0;
   color: #F5F5F5;
+  margin: 20px 0;
 }
 .formulario .datosForm input[type=reset] {
   font-size: 14px;
@@ -608,11 +612,13 @@ table {
   height: 36px;
   background-color: #F8F5FF;
   color: #0468A0;
+  margin: 20px 0;
 }
 .formulario .datosForm select, .formulario .datosForm input[type=datetime-local], .formulario .datosForm input[type=text], .formulario .datosForm input[type=number] {
   background-color: #E7EDF0;
   border-color: #E7EDF0;
   color: #797979;
+  margin: 20px 0;
 }
 
 @media screen and (min-width: 992px) {
@@ -636,6 +642,7 @@ table {
     line-height: 30px;
   }
   .formulario .datosForm {
+    margin-top: 20px;
     color: #0468A0;
   }
   .formulario .datosForm input, .formulario .datosForm select, .formulario .datosForm input[type=datetime-local], .formulario .datosForm input[type=text], .formulario .datosForm input[type=number] {
