@@ -1,7 +1,7 @@
 /* Inicio de la página obras sociales mobile */
 
 .mainObrasSociales{
-  margin-top: 60px;
+  margin-top: 90px;
   background-color: map-get($colors-OS, bodyColor1);
   h2{
     font-size: map-get($fontSize, xl); /* Se que no es buena práctica pero no se como hacer al haber hecho desktop first y no mobile */
@@ -28,7 +28,7 @@
 @media screen and (min-width: 992px){
 
   .mainObrasSociales{
-    margin-top: 100px;
+    margin-top: 170px;
     padding-left: 60px;
     padding-right: 60px;
     h2{

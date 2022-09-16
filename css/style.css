@@ -112,11 +112,11 @@ table {
 .siteNav img {
   width: 125px;
   height: 44px;
-  margin-left: 16px;
+  margin-left: 25px;
 }
-
-.btnNav {
+.siteNav .btnNav {
   border: none;
+  margin-right: 10px;
 }
 
 /* Fin header mobile todas las páginas */
@@ -138,21 +138,21 @@ table {
     width: 22px;
     height: 22px;
   }
-  .navList {
-    align-items: center;
-    margin-right: 60px;
-  }
   .siteNav img {
     padding-left: 60px;
     width: 272px;
     height: 101px;
   }
-  .nav-link {
+  .siteNav .navList {
+    align-items: center;
+    margin-right: 60px;
+  }
+  .siteNav .navList .nav-link {
     color: #000000;
     text-decoration: none;
     cursor: pointer;
   }
-  .turnos {
+  .siteNav .navList .turnos {
     color: #FFFFFF;
     background-color: #0468A0;
     height: 40px;
@@ -162,10 +162,10 @@ table {
     justify-content: center;
     align-items: center;
   }
-  .turnos a {
+  .siteNav .navList .turnos a {
     color: #FFFFFF;
   }
-  .obrasSociales {
+  .siteNav .navList .obrasSociales {
     color: #FFFFFF;
     background-color: #21A4A4;
     height: 40px;
@@ -175,7 +175,7 @@ table {
     justify-content: center;
     align-items: center;
   }
-  .obrasSociales a {
+  .siteNav .navList .obrasSociales a {
     color: #FFFFFF;
   }
 }
@@ -233,7 +233,7 @@ table {
 /* Fin footer desktop de todas las páginas*/
 /* Inicio de la página index mobile */
 .index {
-  margin-top: 60px;
+  margin-top: 90px;
 }
 .index h2 {
   font-size: 20px;
@@ -347,7 +347,7 @@ table {
 /* Inicio de la página index desktop*/
 @media screen and (min-width: 992px) {
   .index {
-    margin-top: 100px;
+    margin-top: 170px;
   }
   .index h2 {
     font-size: 25px;
@@ -406,7 +406,7 @@ table {
 /* Fin de la página index desktop*/
 /* Inicio de la página quiénes somos mobile */
 .quienesSomos {
-  margin-top: 60px;
+  margin-top: 90px;
   background-color: #fffdfd;
 }
 .quienesSomos h2 {
@@ -530,7 +530,7 @@ table {
 /* Inicio de la página quiénes somos desktop */
 @media screen and (min-width: 992px) {
   .quienesSomos {
-    margin-top: 100px;
+    margin-top: 170px;
     background-color: #fffdfd;
   }
   .quienesSomos h2 {
@@ -555,7 +555,7 @@ table {
 /* Fin de la página quiénes somos desktop */
 .formulario {
   min-height: 90vh;
-  margin-top: 60px;
+  margin-top: 90px;
   background-image: url("../images/secretaria.png");
   background-size: cover;
 }
@@ -623,7 +623,7 @@ table {
 
 @media screen and (min-width: 992px) {
   .formulario {
-    margin-top: 100px;
+    margin-top: 170px;
     background-image: none;
     background-color: #F5F5F5;
   }
@@ -658,7 +658,7 @@ table {
 }
 /* Inicio de la página obras sociales mobile */
 .mainObrasSociales {
-  margin-top: 60px;
+  margin-top: 90px;
   background-color: #fffdfd;
 }
 .mainObrasSociales h2 {
@@ -680,7 +680,7 @@ table {
 /* Inicio de la página obras sociales desktop */
 @media screen and (min-width: 992px) {
   .mainObrasSociales {
-    margin-top: 100px;
+    margin-top: 170px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -700,7 +700,7 @@ table {
 /* Inicio de la página rehabilitación mobile */
 .rehabilitacion {
   min-height: 70vh;
-  margin-top: 60px;
+  margin-top: 90px;
   background-color: #fffdfd;
 }
 .rehabilitacion h2 {
@@ -751,7 +751,7 @@ table {
 /* Inicio de la página rehabilitación física desktop */
 @media screen and (min-width: 992px) {
   .rehabilitacion {
-    margin-top: 100px;
+    margin-top: 170px;
     padding: 0px 60px;
   }
   .rehabilitacion h2 {

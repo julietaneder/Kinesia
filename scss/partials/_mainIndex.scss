@@ -1,7 +1,7 @@
 /* Inicio de la página index mobile */
 
 .index{
-  margin-top: 60px;
+  margin-top: 90px;
   h2{
     font-size: map-get($fontSize, xl);
   }
@@ -112,7 +112,7 @@
 @media screen and (min-width: 992px){
     
   .index{
-    margin-top: 100px;
+    margin-top: 170px;
     h2{
       font-size: map-get($fontSize, xxxl);
       margin-left: 60px;

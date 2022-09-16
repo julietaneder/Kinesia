@@ -2,7 +2,7 @@
 
 .rehabilitacion{
     min-height: 70vh;
-    margin-top: 60px;
+    margin-top: 90px;
     background-color: map-get($colors-rehabilitacion, bodyColor1);
     h2{
         font-size: map-get($fontSize, xl);
@@ -48,7 +48,7 @@
 @media screen and (min-width: 992px){
 
     .rehabilitacion{
-        margin-top: 100px;
+        margin-top: 170px;
         padding: 0px 60px;
         h2{
             font-size: map-get($fontSize, xxl); /* Se que no es buena práctica, pero no se como hacer al haber hecho desktop first y no mobile */
