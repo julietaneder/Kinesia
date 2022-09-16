@@ -3,7 +3,7 @@
 .formulario{
     min-height: 90vh;
     margin-top: 60px;
-    background-image: url('../../images/secretaria.png');
+    background-image: url('../images/secretaria.png');
     background-size: cover;    
     .infoForm{
         li{
@@ -84,7 +84,7 @@
         background-image: none;
         background-color: map-get($colors-turnos, neutralColor2Variant1);
         .infoForm{
-            background-image: url('../../images/secretaria.png');
+            background-image: url('../images/secretaria.png');
             margin: 0px;
             li{
                 h2, p{

@@ -274,7 +274,7 @@ table {
 .index .profesionales .profesionalesContent .cardWrapper .card {
   width: 320px;
   border-radius: 25px;
-  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .index .profesionales .profesionalesContent .cardWrapper .card .imageContent {
   display: flex;
@@ -556,7 +556,7 @@ table {
 .formulario {
   min-height: 90vh;
   margin-top: 60px;
-  background-image: url("../../images/secretaria.png");
+  background-image: url("../images/secretaria.png");
   background-size: cover;
 }
 .formulario .infoForm li h2 {
@@ -628,7 +628,7 @@ table {
     background-color: #F5F5F5;
   }
   .formulario .infoForm {
-    background-image: url("../../images/secretaria.png");
+    background-image: url("../images/secretaria.png");
     margin: 0px;
   }
   .formulario .infoForm li h2, .formulario .infoForm li p {
@@ -699,6 +699,7 @@ table {
 /* Fin de la página obras sociales desktop */
 /* Inicio de la página rehabilitación mobile */
 .rehabilitacion {
+  min-height: 70vh;
   margin-top: 60px;
   background-color: #fffdfd;
 }
